@@ -1,0 +1,29 @@
+#slider-range {
+    border: 1px solid #ccc;
+}
+
+#slider-range svg line.track {
+    stroke-opacity: 0.4;
+    stroke: #000;
+    stroke-width: 10px;
+}
+
+#slider-range svg line.track-inset {
+    stroke: rgb(224, 176, 255);
+    stroke-width: 8px;
+}
+
+#slider-range svg line.track-overlay {
+    stroke: #ccc;
+    stroke-width: 40px;
+    stroke-opacity: 0;
+    cursor: crosshair;
+}
+
+#slider-range svg .handle {
+    fill: rgb(148, 0, 211);
+}
+
+#slider-range svg line.track-overlay, #sider-time svg line.track, #slider-time svg line.track-inset {
+    stroke-linecap: round;
+}

@@ -1,0 +1,356 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bar",
+				"barheight"
+			],
+			[
+				"ba",
+				"barwidth"
+			],
+			[
+				"car",
+				"card7Text"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"select",
+				"selectAll"
+			],
+			[
+				"sele",
+				"selectAll"
+			],
+			[
+				"sc",
+				"scaleBand"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"value",
+				"value"
+			],
+			[
+				"card",
+				"card4Data"
+			],
+			[
+				"card4",
+				"card4G"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"fon",
+				"font-family\tproperty"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"h",
+				"html\thtml"
+			],
+			[
+				"_",
+				"_email"
+			],
+			[
+				"Us",
+				"UserID"
+			],
+			[
+				"use",
+				"userID"
+			],
+			[
+				"ro",
+				"rows"
+			],
+			[
+				"user_",
+				"user_name"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"im",
+				"image_data"
+			],
+			[
+				"ima",
+				"image_data"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"p",
+				"pwd"
+			],
+			[
+				"loa",
+				"load_r"
+			],
+			[
+				"r",
+				"rows"
+			],
+			[
+				"dict",
+				"dictfetchall"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"va",
+				"val2"
+			],
+			[
+				"val",
+				"val1"
+			],
+			[
+				"in",
+				"input\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"jin",
+				"Set Syntax: HTML (Jinja2)"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/STUDY/DAL_WINTER/Vizualization/1GTDProject/Website/js/index",
+		"/D/STUDY/DAL_WINTER/Vizualization/1GTDProject/Website/js/index.js",
+		"/D/STUDY/DAL_WINTER/Vizualization/1GTDProject/Website/css/index",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/index.css",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/data/card1Data",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/index.js",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/demo.html",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/data/card2Data",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/data/card3Data",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/data/card6Data",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/data/card7Data",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/data/card5Data",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/index.html",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/card2Data",
+		"/D/STUDY/DAL_WINTER/Vizualization/web/demo",
+		"/D/STUDY/DAL _Fall/Mobile Computing/Flask/dbconfig.py",
+		"/D/STUDY/DAL _Fall/Mobile Computing/Flask/server.py",
+		"/C/Users/darpa/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/darpa/Desktop/pedestrian_code/pedestrian.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/travello/urls.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/naics/settings.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/naics/urls.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/travello/models.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/travello/views.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/templates/index.html",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/calc/urls.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/calc/views.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/templates/result.html",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/templates/home.html",
+		"/C/Users/darpa/Desktop/WebPage_Django/naics/templates/base.html",
+		"/C/Users/darpa/Desktop/WebPage_Django/website/website/settings.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/website/dropdown/admin.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/website/dropdown/models.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/NAICS_1/NAICS_1/settings.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/NAICS_1/manage.py",
+		"/C/Users/darpa/Desktop/WebPage_Django/NAICS_1/db.sqlite3"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

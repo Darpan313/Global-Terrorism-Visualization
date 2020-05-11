@@ -1,0 +1,356 @@
+
+#head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: 	rgb(211,211,211);
+}
+
+#head li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+#head li:last-child {
+    border-right: none;
+}
+
+#head li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#head li a:hover:not(.active) {
+    background-color:rgb(148, 0, 211);
+}
+
+.active {
+    background-color: rgb(224, 176, 255);
+}
+#map{
+    width: 1024px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: 2px;
+    margin-bottom: auto;
+    position: relative;
+    border: 1px black solid;
+}
+#terror{
+    width: 1024px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: 2px;
+    margin-bottom: auto;
+    position: relative;
+    border: 1px black solid;
+}
+
+#map-legend {
+    stroke-width: 0.5;
+    stroke: #717171;
+}
+
+#map-legend-axis text {
+    font-size: 12px;
+    font-weight: bold;
+    fill: #717171;
+}
+
+#map-legend-axis line, #map-legend-axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#map-legend-axis path {
+    display: none;
+}
+#info-selector {
+    position: relative;
+    height: 80px;
+}
+
+#country-input-label {
+    top: 20px;
+    left: 724px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#country-input {
+    top: 45px;
+    left: 724px;
+    width: 300px;
+}
+
+#type-input {
+    position: absolute;
+    top: 27px;
+    left: 320px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7a765f;
+}
+
+#total {
+    position: absolute;
+    top: 27px;
+    left: 33%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7a765f;
+}
+
+#teetotal {
+    position: absolute;
+    top: 27px;
+    left: 75%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7a765f;
+}
+
+#totalincidents {
+    position: absolute;
+    top: 27px;
+    left: 53.5%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7a765f;
+}
+
+#terror-info-selector {
+    position: relative;
+    height: 80px;
+}
+
+#terror-input-label {
+    top: 20px;
+    left: 724px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#terror-input {
+    top: 45px;
+    left: 724px;
+    width: 300px;
+}
+
+#terror-input {
+    top: 30px;
+    left: 320px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7a765f;
+}
+
+#totalDeathsByTerror {
+    position: absolute;
+    top: 30px;
+    left: 55%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7a765f;
+}
+#totalAttacksByTerror {
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7a765f;
+}
+#name,#name1,#name2{
+    position: absolute;
+    top: 420px;
+    margin-left: 43%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7a765f;
+}
+
+#spiral{
+    width: 490px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    border: 1px black solid;
+}
+#target-type{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+#attack-type{
+    width: 490px;
+    height: 500px;
+    margin-left: 7px;
+    position: relative;
+}
+#weapon-type{
+    width: 490px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+#summary{
+    width: 490px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    border: 1px black solid;
+}
+#bar {
+    width: 1518px;
+    height: 280px;
+    top: 2px;
+    margin: auto;
+    position: relative;
+    border: 1px black solid;
+}
+
+.year {
+    fill: rgb(224, 176, 255);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.selected-year {
+    opacity: 0.9;
+    fill: rgb(148, 0, 211);
+}
+
+.active-year {
+    opacity: 1;
+    stroke-width: 2;
+    stroke: black;
+}
+
+.bar-text {
+    fill: #7a765f;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.bar-point {
+    fill: #c50059;
+}
+
+.bar-line {
+    stroke: black;
+    stroke-width: 2
+}
+
+.grid line {
+    stroke: #717171;
+    stroke-opacity: 0.3;
+    shape-rendering: crispEdges;
+}
+
+.grid text {
+    fill: #717171;
+    font-weight: bold;
+}
+
+.grid .domain {
+    display: none;
+}
+
+#intro{
+    position: relative;
+    width: 1500px;
+    margin:auto;
+}
+
+#footer{
+    position: relative;
+    width: 1500px;
+    margin:auto;
+}
+
+.d3-tip {
+    line-height: 1;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.project-tab {
+    padding: 10%;
+    margin-top: -8%;
+}
+.project-tab #tabs{
+    background: #007b5e;
+    color: #eee;
+}
+.project-tab #tabs h6.section-title{
+    color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #0062cc;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.project-tab .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #0062cc;
+    font-size: 16px;
+    font-weight: 600;
+}
+.project-tab .nav-link:hover {
+    border: none;
+}
+.project-tab thead{
+    background: #f3f3f3;
+    color: #333;
+}
+.project-tab a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+.toolTip {
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    min-width: 50px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 9px 14px 6px 14px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 1.3;
+    color: #5B6770;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, .15);
+}
+.toolTip:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -12px;
+}
+.toolTip span {
+    font-weight: 500;
+    color: #081F2C;
+}
