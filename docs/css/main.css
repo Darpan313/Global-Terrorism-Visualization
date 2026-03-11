@@ -177,12 +177,11 @@
 }
 
 #map {
-    flex: 0 0 65%;
-    max-width: 65%;
+    flex: 0 0 68%;
+    max-width: 68%;
     min-width: 0;
     position: relative;
     border-right: 1px black solid;
-    overflow: hidden;
 }
 
 #map svg {
@@ -213,8 +212,8 @@
 }
 
 #spiral {
-    flex: 0 0 35%;
-    max-width: 35%;
+    flex: 0 0 32%;
+    max-width: 32%;
     min-width: 0;
     position: relative;
     overflow: auto;
