@@ -169,19 +169,17 @@
 
 /* ===== Map + Table container ===== */
 .map-table-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     width: 100%;
     border: 1px black solid;
     box-sizing: border-box;
 }
 
 #map {
-    flex: 0 0 68%;
-    max-width: 68%;
-    min-width: 0;
     position: relative;
     border-right: 1px black solid;
+    min-width: 0;
 }
 
 #map svg {
@@ -212,8 +210,6 @@
 }
 
 #spiral {
-    flex: 0 0 32%;
-    max-width: 32%;
     min-width: 0;
     position: relative;
     overflow: auto;
@@ -432,21 +428,12 @@
 
 @media screen and (max-width: 992px) {
     .map-table-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     #map {
-        flex: none;
-        max-width: 100%;
-        width: 100%;
         border-right: none;
         border-bottom: 1px black solid;
-    }
-
-    #spiral {
-        flex: none;
-        max-width: 100%;
-        width: 100%;
     }
 
     #info-selector,
