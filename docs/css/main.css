@@ -170,14 +170,15 @@
 /* ===== Map + Table container ===== */
 .map-table-container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     border: 1px black solid;
     box-sizing: border-box;
-    min-height: 400px;
 }
 
 #map {
-    flex: 1 1 65%;
+    flex: 0 0 65%;
+    max-width: 65%;
     min-width: 0;
     position: relative;
     border-right: 1px black solid;
@@ -212,7 +213,8 @@
 }
 
 #spiral {
-    flex: 1 1 35%;
+    flex: 0 0 35%;
+    max-width: 35%;
     min-width: 0;
     position: relative;
     overflow: auto;
@@ -436,6 +438,7 @@
 
     #map {
         flex: none;
+        max-width: 100%;
         width: 100%;
         border-right: none;
         border-bottom: 1px black solid;
@@ -443,6 +446,7 @@
 
     #spiral {
         flex: none;
+        max-width: 100%;
         width: 100%;
     }
 

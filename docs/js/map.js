@@ -204,8 +204,7 @@ var WORLDMAP = {
             svg = d3.select("div#map").append("svg")
                 .attr("viewBox", "0 0 1024 500")
                 .attr("preserveAspectRatio", "xMidYMid meet")
-                .attr("width", "100%")
-                .attr("height", "100%");
+                .attr("width", "100%");
             svg.append("g")
                 .attr("class", "countries")
                 .selectAll("path")
