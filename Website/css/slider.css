@@ -24,6 +24,22 @@
     fill: rgb(148, 0, 211);
 }
 
-#slider-range svg line.track-overlay, #sider-time svg line.track, #slider-time svg line.track-inset {
+#slider-range svg line.track-overlay, #slider-time svg line.track, #slider-time svg line.track-inset {
     stroke-linecap: round;
+}
+
+#slider-range svg .parameter-value text {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 992px) {
+    #slider-range svg .tick text {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #slider-range svg .tick text {
+        font-size: 7px;
+    }
 }

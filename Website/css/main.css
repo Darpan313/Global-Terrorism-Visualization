@@ -1,19 +1,34 @@
+/* ===== Page wrapper ===== */
+.page-wrapper {
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
 
+/* ===== Navigation ===== */
 #head ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: 	rgb(211,211,211);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(211,211,211);
 }
 
 #head li {
-    float: left;
-    border-right:1px solid #bbb;
+    border-right: 1px solid #bbb;
 }
 
 #head li:last-child {
     border-right: none;
+}
+
+#head li.nav-right {
+    margin-left: auto;
+    border-right: none;
+    border-left: 1px solid #bbb;
 }
 
 #head li a {
@@ -23,198 +38,25 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    white-space: nowrap;
 }
 #head li a:hover:not(.active) {
-    background-color:rgb(148, 0, 211);
+    background-color: rgb(148, 0, 211);
 }
 
 .active {
     background-color: rgb(224, 176, 255);
 }
-#map{
-    width: 1024px;
-    height: 500px;
-    margin-right: auto;
-    margin-left: 2px;
-    margin-bottom: auto;
-    position: relative;
-    border: 1px black solid;
-}
-#terror{
-    width: 1024px;
-    height: 500px;
-    margin-right: auto;
-    margin-left: 2px;
-    margin-bottom: auto;
-    position: relative;
-    border: 1px black solid;
-}
 
-#map-legend {
-    stroke-width: 0.5;
-    stroke: #717171;
-}
-
-#map-legend-axis text {
-    font-size: 12px;
-    font-weight: bold;
-    fill: #717171;
-}
-
-#map-legend-axis line, #map-legend-axis path {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-}
-
-#map-legend-axis path {
-    display: none;
-}
-#info-selector {
-    position: relative;
-    height: 80px;
-}
-
-#country-input-label {
-    top: 20px;
-    left: 724px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#country-input {
-    top: 45px;
-    left: 724px;
-    width: 300px;
-}
-
-#type-input {
-    position: absolute;
-    top: 27px;
-    left: 320px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #7a765f;
-}
-
-#total {
-    position: absolute;
-    top: 27px;
-    left: 33%;
-    font-size: 25px;
-    font-weight: bold;
-    color: #7a765f;
-}
-
-#teetotal {
-    position: absolute;
-    top: 27px;
-    left: 75%;
-    font-size: 25px;
-    font-weight: bold;
-    color: #7a765f;
-}
-
-#totalincidents {
-    position: absolute;
-    top: 27px;
-    left: 53.5%;
-    font-size: 25px;
-    font-weight: bold;
-    color: #7a765f;
-}
-
-#terror-info-selector {
-    position: relative;
-    height: 80px;
-}
-
-#terror-input-label {
-    top: 20px;
-    left: 724px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#terror-input {
-    top: 45px;
-    left: 724px;
-    width: 300px;
-}
-
-#terror-input {
-    top: 30px;
-    left: 320px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #7a765f;
-}
-
-#totalDeathsByTerror {
-    position: absolute;
-    top: 30px;
-    left: 55%;
-    font-size: 25px;
-    font-weight: bold;
-    color: #7a765f;
-}
-#totalAttacksByTerror {
-    position: absolute;
-    top: 30px;
-    left: 30%;
-    font-size: 25px;
-    font-weight: bold;
-    color: #7a765f;
-}
-#name,#name1,#name2{
-    position: absolute;
-    top: 420px;
-    margin-left: 43%;
-    font-size: 18px;
-    font-weight: bold;
-    color: #7a765f;
-}
-
-#spiral{
-    width: 490px;
-    height: 500px;
-    margin: auto;
-    position: relative;
-    border: 1px black solid;
-}
-#target-type{
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    position: relative;
-}
-#attack-type{
-    width: 490px;
-    height: 500px;
-    margin-left: 7px;
-    position: relative;
-}
-#weapon-type{
-    width: 490px;
-    height: 500px;
-    margin: auto;
-    position: relative;
-}
-
-#summary{
-    width: 490px;
-    height: 500px;
-    margin: auto;
-    position: relative;
-    border: 1px black solid;
-}
+/* ===== Bar chart ===== */
 #bar {
-    width: 1518px;
+    width: 100%;
     height: 280px;
-    top: 2px;
-    margin: auto;
+    margin: 2px auto 0;
     position: relative;
     border: 1px black solid;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .year {
@@ -264,18 +106,225 @@
     display: none;
 }
 
-#intro{
-    position: relative;
-    width: 1500px;
-    margin:auto;
+/* ===== Slider ===== */
+#slider-range {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
-#footer{
-    position: relative;
-    width: 1500px;
-    margin:auto;
+#slider-range svg {
+    display: block;
 }
 
+/* ===== Info selector (country) ===== */
+#info-selector {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+    position: relative;
+}
+
+#info-selector .selector-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+#info-selector .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 25px;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+#country-input-label {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#country-input {
+    width: 200px;
+}
+
+#type-input,
+#total,
+#totalincidents,
+#teetotal {
+    position: static;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a765f;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* ===== Map + Table container ===== */
+.map-table-container {
+    display: flex;
+    width: 100%;
+    border: 1px black solid;
+    box-sizing: border-box;
+    min-height: 400px;
+}
+
+#map {
+    flex: 1 1 65%;
+    min-width: 0;
+    position: relative;
+    border-right: 1px black solid;
+    overflow: hidden;
+}
+
+#map svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#map-legend {
+    stroke-width: 0.5;
+    stroke: #717171;
+}
+
+#map-legend-axis text {
+    font-size: 12px;
+    font-weight: bold;
+    fill: #717171;
+}
+
+#map-legend-axis line, #map-legend-axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#map-legend-axis path {
+    display: none;
+}
+
+#spiral {
+    flex: 1 1 35%;
+    min-width: 0;
+    position: relative;
+    overflow: auto;
+}
+
+#spiral .row {
+    margin: 0;
+}
+
+#spiral .col-md-12 {
+    padding: 0;
+}
+
+/* ===== Terror info selector ===== */
+#terror-info-selector {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+    position: relative;
+}
+
+#terror-info-selector .selector-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+#terror-info-selector .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 25px;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+#terror-input-label {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#terror-input {
+    width: 200px;
+}
+
+#totalDeathsByTerror,
+#totalAttacksByTerror {
+    position: static;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a765f;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* ===== Radar charts container ===== */
+.radar-charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#target-type,
+#attack-type,
+#weapon-type {
+    flex: 1 1 33.333%;
+    min-width: 280px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#target-type svg,
+#attack-type svg,
+#weapon-type svg {
+    max-width: 100%;
+    height: auto;
+    order: 1;
+}
+
+#name, #name1, #name2 {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7a765f;
+    position: static;
+    order: 2;
+    margin: 5px 0 10px;
+}
+
+/* ===== Footer & Intro ===== */
+#intro {
+    position: relative;
+    width: 100%;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+}
+
+/* ===== Tooltips ===== */
 .d3-tip {
     line-height: 1;
     padding: 6px;
@@ -283,17 +332,51 @@
     color: #fff;
     border-radius: 4px;
     font-size: 12px;
+    z-index: 1100;
 }
 
+.toolTip {
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    min-width: 50px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 9px 14px 6px 14px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 1.3;
+    color: #5B6770;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, .15);
+    z-index: 1100;
+}
+.toolTip:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -12px;
+}
+.toolTip span {
+    font-weight: 500;
+    color: #081F2C;
+}
+
+/* ===== Tab styling ===== */
 .project-tab {
     padding: 10%;
     margin-top: -8%;
 }
-.project-tab #tabs{
+.project-tab #tabs {
     background: #007b5e;
     color: #eee;
 }
-.project-tab #tabs h6.section-title{
+.project-tab #tabs h6.section-title {
     color: #eee;
 }
 .project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -315,42 +398,154 @@
 .project-tab .nav-link:hover {
     border: none;
 }
-.project-tab thead{
+.project-tab thead {
     background: #f3f3f3;
     color: #333;
 }
-.project-tab a{
+.project-tab a {
     text-decoration: none;
     color: #333;
     font-weight: 600;
 }
-.toolTip {
-    pointer-events: none;
-    position: absolute;
-    display: none;
-    min-width: 50px;
-    height: auto;
-    background: none repeat scroll 0 0 #ffffff;
-    padding: 9px 14px 6px 14px;
-    border-radius: 2px;
-    text-align: center;
-    line-height: 1.3;
-    color: #5B6770;
-    box-shadow: 0px 3px 9px rgba(0, 0, 0, .15);
+
+/* ===== Responsive breakpoints ===== */
+
+/* Large screens - reduce bar chart height */
+@media screen and (max-height: 925px) {
+    #bar {
+        height: 250px;
+    }
 }
-.toolTip:after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 12px solid white;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    margin-left: -12px;
+
+/* Tablet and below */
+@media screen and (max-width: 1200px) {
+    #type-input,
+    #total,
+    #totalincidents,
+    #teetotal,
+    #totalDeathsByTerror,
+    #totalAttacksByTerror {
+        font-size: 16px;
+    }
 }
-.toolTip span {
-    font-weight: 500;
-    color: #081F2C;
+
+@media screen and (max-width: 992px) {
+    .map-table-container {
+        flex-direction: column;
+    }
+
+    #map {
+        flex: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px black solid;
+    }
+
+    #spiral {
+        flex: none;
+        width: 100%;
+    }
+
+    #info-selector,
+    #terror-info-selector {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #info-selector .stats-row,
+    #terror-info-selector .stats-row {
+        justify-content: flex-start;
+    }
+
+    #target-type,
+    #attack-type,
+    #weapon-type {
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #head ul {
+        flex-direction: column;
+    }
+
+    #head li {
+        border-right: none;
+        border-bottom: 1px solid #bbb;
+    }
+
+    #head li.nav-right {
+        margin-left: 0;
+        border-left: none;
+    }
+
+    #head li a {
+        text-align: left;
+        padding: 12px 16px;
+    }
+
+    #bar {
+        height: 200px;
+    }
+
+    #type-input,
+    #total,
+    #totalincidents,
+    #teetotal,
+    #totalDeathsByTerror,
+    #totalAttacksByTerror {
+        font-size: 14px;
+    }
+
+    .radar-charts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #target-type,
+    #attack-type,
+    #weapon-type {
+        flex: none;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 13px !important;
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-wrapper {
+        padding: 0 5px;
+    }
+
+    #head li a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    #bar {
+        height: 160px;
+    }
+
+    #info-selector .stats-row,
+    #terror-info-selector .stats-row {
+        gap: 5px 15px;
+    }
+
+    #type-input,
+    #total,
+    #totalincidents,
+    #teetotal,
+    #totalDeathsByTerror,
+    #totalAttacksByTerror {
+        font-size: 12px;
+    }
+
+    #country-input,
+    #terror-input {
+        width: 150px;
+    }
 }

@@ -201,7 +201,11 @@ var WORLDMAP = {
             data.features.forEach(d => {
                 d.nkill = gtd[d.id];
             });
-            svg = d3.select("div#map").append("svg").attr("width", 1024).attr("height", 500);
+            svg = d3.select("div#map").append("svg")
+                .attr("viewBox", "0 0 1024 500")
+                .attr("preserveAspectRatio", "xMidYMid meet")
+                .attr("width", "100%")
+                .attr("height", "100%");
             svg.append("g")
                 .attr("class", "countries")
                 .selectAll("path")

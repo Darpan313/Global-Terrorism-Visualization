@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GT viz</title>
     <script src="js/libs/jquery.min.js"></script>
     <link
@@ -41,40 +42,43 @@
 
         $(".tabs-list li").click(function(){
             var tabid = $(this).find("a").attr("href");
-            $(".tabs-list li,.tabs div.tab").removeClass("active");   // removing active class from tab
+            $(".tabs-list li,.tabs div.tab").removeClass("active");
 
-            $(".tab").hide();   // hiding open tab
-            $(tabid).show();    // show tab
-            $(this).addClass("active"); //  adding active class to clicked tab
+            $(".tab").hide();
+            $(tabid).show();
+            $(this).addClass("active");
 
         });
 
     });
 </script>
-<div>
+<div class="page-wrapper">
     <div id="head">
     <ul>
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#info-selector">View by Country</a></li>
         <li><a href="#terror-info-selector">View by Terror Group</a></li>
-        <li style="float:right"><a href="#about">About</a></li>
+        <li class="nav-right"><a href="#about">About</a></li>
     </ul>
     </div>
     <div id="bar"></div>
-    <div id="slider-range">
-    </div>
+    <div id="slider-range"></div>
     <div id="info-selector">
-        <label id="country-input-label" for="country-input">Country</label><br>
-        <select class="chosen" id="country-input">
-        </select>
-        <p id="type-input">2014-2017</p>
-        <p id="total">Total Deaths:<span id="val"></span></p>
-        <p id="totalincidents">Total Incidents:<span id="ival"></span></p>
-        <p id="teetotal">Total Terror groups:<span id="tval"></span></p>
+        <div class="selector-controls">
+            <label id="country-input-label" for="country-input">Country</label>
+            <select class="chosen" id="country-input">
+            </select>
+        </div>
+        <div class="stats-row">
+            <p id="type-input">2014-2017</p>
+            <p id="total">Total Deaths:<span id="val"></span></p>
+            <p id="totalincidents">Total Incidents:<span id="ival"></span></p>
+            <p id="teetotal">Total Terror groups:<span id="tval"></span></p>
+        </div>
     </div>
-    <div style="display: inline-block; width: 100%;border: 1px black solid;">
-    <div id="map"style="float: left"></div>
-    <div id="spiral" style="float: right">
+    <div class="map-table-container">
+        <div id="map"></div>
+        <div id="spiral">
             <div class="row">
                 <div class="col-md-12">
                     <nav>
@@ -96,43 +100,47 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
     </div>
     <hr>
     <div id="terror-info-selector">
-        <label id="terror-input-label" for="terror-input">Terror group</label><br>
-        <select class="chosen" id="terror-input">
-            <option value='0'>Select Terror group</option>
-        </select>
-        <p id="totalAttacksByTerror">Total Attacks:<span id="avalue"></span></p>
-        <p id="totalDeathsByTerror">Total Killed:<span id="dvalue"></span></p>
+        <div class="selector-controls">
+            <label id="terror-input-label" for="terror-input">Terror group</label>
+            <select class="chosen" id="terror-input">
+                <option value='0'>Select Terror group</option>
+            </select>
+        </div>
+        <div class="stats-row">
+            <p id="totalAttacksByTerror">Total Attacks:<span id="avalue"></span></p>
+            <p id="totalDeathsByTerror">Total Killed:<span id="dvalue"></span></p>
+        </div>
     </div>
-    <div style="width: 100%">
-        <div style="float: left; width: 33%;" id="target-type"><span id="name">Target type</span></div>
-        <div style="float: left; width: 33%;" id="attack-type"><span id="name1">Attack type</span></div>
-        <div style="float: right; width: 33%;" id="weapon-type"><span id="name2">Weapon type</span></div>
-        <br style="clear: left;" />
+    <div class="radar-charts-container">
+        <div id="target-type"><span id="name">Target type</span></div>
+        <div id="attack-type"><span id="name1">Attack type</span></div>
+        <div id="weapon-type"><span id="name2">Weapon type</span></div>
     </div>
 </div>
 <script src="js/map.js"></script>
 <script src="js/index.js"></script>
 <script src="js/bar.js"></script>
 
-<div id="intro">
-    <br/><br/>
-    <p style="text-align:right">The data is from <a
-            href="https://www.start.umd.edu/data-tools/global-terrorism-database-gtd" target="_blank">Global Terrorism
-        Database</a>.</p>
-</div>
+<div class="page-wrapper">
+    <div id="intro">
+        <p style="text-align:right">The data is from <a
+                href="https://www.start.umd.edu/data-tools/global-terrorism-database-gtd" target="_blank">Global Terrorism
+            Database</a>.</p>
+    </div>
 
-<div id="footer">
-    <hr/>
-    <table style="width: 100%;margin: auto">
-        <tr>
-            <th>Made by <i><a href="https://in.linkedin.com/in/darpan-patel-036837105/">Darpan Patel</a></i></th>
-        </tr>
-    </table>
+    <div id="footer">
+        <hr/>
+        <table style="width: 100%;margin: auto">
+            <tr>
+                <th>Made by <i><a href="https://in.linkedin.com/in/darpan-patel-036837105/">Darpan Patel</a></i></th>
+            </tr>
+        </table>
+    </div>
 </div>
 
 </body>

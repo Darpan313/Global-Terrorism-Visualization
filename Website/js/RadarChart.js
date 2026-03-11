@@ -37,8 +37,10 @@ var RadarChart = {
 
         var g = d3.select(id)
             .append("svg")
-            .attr("width", cfg.w+cfg.ExtraWidthX)
-            .attr("height", cfg.h+cfg.ExtraWidthY)
+            .attr("viewBox", "0 0 " + (cfg.w+cfg.ExtraWidthX) + " " + (cfg.h+cfg.ExtraWidthY))
+            .attr("preserveAspectRatio", "xMidYMid meet")
+            .attr("width", "100%")
+            .attr("height", "100%")
             .append("g")
             .attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
 

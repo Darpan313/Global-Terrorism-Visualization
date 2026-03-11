@@ -4,18 +4,21 @@ d3.csv('data/clean/year_kill.csv').then(function(data){
 		d.nkill = +d.nkill;
 	});
 	var barWidth = 25;
-	var height=window.innerHeight>925?280:250;
+	var internalWidth = 1518;
+	var height = 280;
 	var xScale = d3.scaleLinear()
 					.domain([d3.min(data,function(d){ return d.iyear}),d3.max(data,function(d){return d.iyear})])
-					.range([0,1475]);
+					.range([0,internalWidth - 43]);
 	var yScale = d3.scaleLinear()
 					.domain([d3.min(data,function(d){ return d.nkill}),d3.max(data,function(d){return d.nkill})])
 					.range([10,height-20]);
 
-	
+
 	var svg = d3.select("div#bar")
 				.classed("bar-svg",true)
 				.append("svg")
+				.attr("viewBox", "0 0 " + internalWidth + " " + height)
+				.attr("preserveAspectRatio", "xMidYMid meet")
 				.attr("width","100%")
 				.attr("height","100%");
 

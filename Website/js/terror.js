@@ -179,28 +179,8 @@ var TERROR = {
 //Call function to draw the Radar chart
 
         RadarChart.draw("div#target-type", temp2, config);
-
-        var svg = d3.select('div#target-type')
-            .selectAll('svg')
-            .append('svg')
-            .attr("width", width)
-            .attr("height", height);
-
         RadarChart.draw("div#attack-type", temp1, config);
-
-        var svg = d3.select('div#attack-type')
-            .selectAll('svg')
-            .append('svg')
-            .attr("width", width)
-            .attr("height", height);
-
         RadarChart.draw("div#weapon-type", temp3, config);
-
-        var svg = d3.select('div#weapon-type')
-            .selectAll('svg')
-            .append('svg')
-            .attr("width", width)
-            .attr("height", height);
     },
     init: function () {
         $("#terrordetails").empty();
