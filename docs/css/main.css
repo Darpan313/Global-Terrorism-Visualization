@@ -171,6 +171,7 @@
 .map-table-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 0 10px;
     width: 100%;
     border: 1px black solid;
     box-sizing: border-box;
@@ -178,7 +179,6 @@
 
 #map {
     position: relative;
-    border-right: 1px black solid;
     min-width: 0;
 }
 
@@ -308,15 +308,25 @@
     margin: 5px 0 10px;
 }
 
-/* ===== Footer & Intro ===== */
-#intro {
+/* ===== Footer ===== */
+#footer {
     position: relative;
     width: 100%;
 }
 
-#footer {
-    position: relative;
-    width: 100%;
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.footer-row a {
+    text-decoration: none;
+    color: #333;
 }
 
 /* ===== Tooltips ===== */
@@ -427,10 +437,10 @@
 @media screen and (max-width: 992px) {
     .map-table-container {
         grid-template-columns: 1fr;
+        gap: 0;
     }
 
     #map {
-        border-right: none;
         border-bottom: 1px black solid;
     }
 
